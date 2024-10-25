@@ -38,15 +38,15 @@ const SidebarItem = (props: Props) => {
 
   return (
     <div
-      className="w-full flex justify-center cursor-pointer flex-col relative pl-2 pt-1 pb-1 hover:bg-gray-300 rounded"
+      className="w-full flex justify-center cursor-pointer flex-col relative"
       onMouseEnter={onMouseEnterHandler}
       onMouseLeave={onMouseLeaveHandler}
     >
       <div
         className={
           isSelected
-            ? "text-sky-400 flex gap-2 items-center"
-            : "flex gap-2 items-center"
+            ? "text-sky-400 flex gap-2 items-center  pl-2 pt-1 pb-1 hover:bg-gray-300 rounded"
+            : "flex gap-2 items-center  pl-2 pt-1 pb-1 hover:bg-gray-300 rounded"
         }
         onClick={handleClick}
       >
